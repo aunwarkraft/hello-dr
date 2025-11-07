@@ -58,7 +58,7 @@ cp .env.example .envThe `.env` file contains configuration for:
 - `DATABASE_URL`: Database connection string (defaults to SQLite)
 - `APP_ENV`: Application environment (development, production, test)
 - `TIMEZONE`: Practice timezone (defaults to America/Toronto)
-- `CORS_ORIGINS`: Allowed CORS origins (comma-separated)
+- `CORS_ORIGINS`: Allowed CORS origins as JSON array (e.g., `["http://localhost:3000"]` or `["http://localhost:3000", "http://localhost:3001"]` for multiple origins)
 
 You can modify these values as needed, or use the defaults.
 
